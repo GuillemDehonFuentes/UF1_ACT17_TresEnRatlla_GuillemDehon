@@ -1,0 +1,48 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <!-- Título -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tres en Pooposo"
+        android:textSize="24sp"
+        android:layout_marginBottom="16dp"
+        android:textStyle="bold" />
+
+    <!-- Tablero (3x3) -->
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rowCount="3"
+        android:columnCount="3">
+
+        <!-- 9 botones para el tablero -->
+        <Button android:id="@+id/btn1" android:layout_width="80dp" android:layout_height="80dp" android:textSize="20sp" />
+        <Button android:id="@+id/btn2" android:layout_width="80dp" android:layout_height="80dp" android:textSize="20sp" />
+        <Button android:id="@+id/btn3" android:layout_width="80dp" android:layout_height="80dp" android:textSize="20sp" />
+
+        <Button android:id="@+id/btn4" android:layout_width="80dp" android:layout_height="80dp" android:textSize="20sp" />
+        <Button android:id="@+id/btn5" android:layout_width="80dp" android:layout_height="80dp" android:textSize="20sp" />
+        <Button android:id="@+id/btn6" android:layout_width="80dp" android:layout_height="80dp" android:textSize="20sp" />
+
+        <Button android:id="@+id/btn7" android:layout_width="80dp" android:layout_height="80dp" android:textSize="20sp" />
+        <Button android:id="@+id/btn8" android:layout_width="80dp" android:layout_height="80dp" android:textSize="20sp" />
+        <Button android:id="@+id/btn9" android:layout_width="80dp" android:layout_height="80dp" android:textSize="20sp" />
+    </GridLayout>
+
+    <!-- Botón de reinicio -->
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reiniciar Juego"
+        android:layout_marginTop="16dp" />
+</LinearLayout>
